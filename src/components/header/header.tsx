@@ -3,15 +3,17 @@ import { Link } from "react-router-dom";
 import "./header.scss";
 import logoUrl from "../../assets/AQ-aero-blue.png";
 
-const listHeader = ["Home", "About", "FAQs", "School", "Contact"];
+const listHeader = ["About", "FAQs", "School", "Contact"];
 
 const Header = () => (
   <div className="header">
-    <div className="content">
+    <div className="header-content">
+    <Link to={`/Home`} key={"Home"}>
       <div className="logo-container">
         <img src={logoUrl} alt="AQ" />
         <div className="name">Anqi Qu</div>
       </div>
+    </Link>
 
       <div className="nav">
       {listHeader.map((item) => {

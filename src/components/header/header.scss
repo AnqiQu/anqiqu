@@ -11,7 +11,7 @@
     background: $alice-blue;
   }
 
-  .content {
+  .header-content {
     width: 80%;
     height: 4em;
     margin: auto;
@@ -20,6 +20,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    a {
+        text-decoration: none;
+    }
 
     .logo-container {
         color: $space-cadet;
@@ -41,5 +45,15 @@
     .nav{
         display: flex;
         justify-content: flex-end;
+        gap: 1em;
+
+        a {
+            color: $space-cadet;
+
+            :hover {
+                color: $yale-blue;
+                font-weight: bold;
+            }
+        }
     }
   }
