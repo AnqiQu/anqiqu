@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import Header from "./components/header/header";
+import { Header, Footer} from "./components";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import routes from "./config/routes";
 
@@ -14,6 +14,7 @@ function App() {
             return <Route path={route.path} element={route.element} />;
           })}
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
